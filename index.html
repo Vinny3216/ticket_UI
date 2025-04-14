@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adele World Tour - Tickets</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* 白色背景 */
+      color: #000000; /* 黑色文字 */
+    }
+
+    .banner {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Adele_2016.jpg/640px-Adele_2016.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner h1 {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: black;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #007BFF; /* 蓝色按钮 */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3; /* 按钮 hover 效果 */
+    }
+
+    .concert-info {
+      margin-top: 20px;
+      background-color: #f0f0f0; /* 灰白色背景 */
+      padding: 15px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <h1>Adele: World Tour 2024</h1>
+  </div>
+
+  <div class="container">
+    <div class="concert-info">
+      <p><strong>Date:</strong> October 5, 2024</p>
+      <p><strong>Time:</strong> 8:00 PM</p>
+      <p><strong>Venue:</strong> Scotiabank Arena</p>
+      <p><strong>City:</strong> Toronto, ON</p>
+      <p><strong>Ticket Price:</strong> $180.00</p>
+    </div>
+
+    <form>
+      <label for="concertId">Concert ID</label>
+      <input type="number" id="concertId" name="concertId" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" maxlength="100" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="quantity">Number of Tickets</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+      <label for="creditCard">Credit Card Number</label>
+      <input type="text" id="creditCard" name="creditCard" maxlength="16" required>
+
+      <label for="expiration">Expiration Date (MM/YY)</label>
+      <input type="text" id="expiration" name="expiration" placeholder="MM/YY" required>
+
+      <label for="securityCode">Security Code</label>
+      <input type="text" id="securityCode" name="securityCode" minlength="3" required>
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" required>
+
+      <label for="province">Province</label>
+      <input type="text" id="province" name="province" required>
+
+      <label for="postalCode">Postal Code</label>
+      <input type="text" id="postalCode" name="postalCode" required>
+
+      <label for="country">Country</label>
+      <input type="text" id="country" name="country" required>
+
+      <button type="submit">Purchase Tickets</button>
+    </form>
+  </div>
+
+</body>
+</html>
